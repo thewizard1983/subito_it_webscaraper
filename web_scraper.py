@@ -45,10 +45,10 @@ for res in risultati:
   body = res["item"]["body"]
   data = res["item"]["date"]
   prezzo = res["item"]["features"]["/price"]["values"][0]["value"]
-  città = res["item"]["geo"]["city"]["value"]
+  citta = res["item"]["geo"]["city"]["value"]
   url = res["item"]["urls"]["default"]
   img = res["item"]["images"][0]["scale"][4]["secureuri"]
-  print(data +" "+città +"\n")
+  print(data +" "+citta +"\n")
   print(str(body))
   print(prezzo)
   print("url: " + url + "\n")
