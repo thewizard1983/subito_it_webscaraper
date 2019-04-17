@@ -49,6 +49,6 @@ for res in risultati:
   url = res["item"]["urls"]["default"]
   img = res["item"]["images"][0]["scale"][4]["secureuri"]
   print(data +" "+citta +"\n")
-  print(str(body))
+  print(body.encode('utf-8').strip())
   print(prezzo)
   print("url: " + url + "\n")
